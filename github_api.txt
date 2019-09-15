@@ -17,8 +17,110 @@ query ($login: String!){
   }
 }
 
+Add a date range arguments
+
+query ($login: String!){
+	user(login: $login){
+		contributionsCollection(from: "2019-09-01T00:00:00.000+00:00", to: "2019-09-07T00:00:00.000+00:00"){
+      contributionCalendar{
+        totalContributions
+        weeks{
+          contributionDays{
+            contributionCount
+            date
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 {
-  "login":"pujafitz"
+  "login":"pujafitz" 1
+}
+{
+ "login":"chilldev-build" 2
+}
+{
+ "login":"alazarabraham"
+}
+{
+ "login":"kobiatl"
+}
+{
+ "login":"kate-gordon"
+}
+{
+ "login":"prescottsun"
+}
+{
+ "login":"reubenremy"
+}
+{
+ "login":"mabdulul"
+}
+{
+ "login":"daniel-farlow"
+}
+{
+ "login":"cmkemp52"
+}
+{
+ "login":"jmarbert"
+}
+{
+ "login":"alonzoc15"
+}
+{
+ "login":"BlacknallW"
+}
+{
+ "login":"joeyf116"
+}
+{
+ "login":"maryella"
+}
+{
+ "login":"KyraTheDork"
+}
+{
+ "login":"SiriReddi"
+}
+{
+ "login":"FelipeD97"
+}
+{
+ "login":"GilliamD"
+}
+{
+ "login":"rjmckenney"
+}
+{
+ "login":"Da-Colon"
+}
+{
+ "login":"neporshiso"
+}
+{
+ "login":"M-Java86"
+}
+{
+ "login":"CZHerrington"
+}
+{
+ "login":""
+}
+{
+ "login":""
+}
+{
+ "login":""
+}
+{
+ "login":""
 }
 
 
